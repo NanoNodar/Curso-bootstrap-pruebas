@@ -1,0 +1,51 @@
+#contenedor{
+    background-color: #fff;
+}
+#header{
+    background-color: #fff;
+    height: 5vh;
+}
+#inicio{
+    background-color: #faf;
+}
+#botonera{
+    background-color: #000;
+}
+#section1{
+    background-color: #f00;
+    height: 50vh;
+}
+#s11{
+    background-color: #8080ff;
+}
+#s12{
+    background-color: #ccccff;
+}
+#s13{
+    background-color: #000066;
+}
+#s14{
+    background-color: #0000e6;
+}
+#section2{
+    background-color: #0f0;
+    height: 40vh;
+}
+#section3{
+    background-color: #00f;
+    height: 30vh;
+}
+#s31{
+    background-color: #804000;
+}
+#s32{
+    background-color: #ff8c1a;
+}
+#section4{
+    background-color: #0ff;
+    height: 30vh;
+}
+#footer{
+    background-color: #000;
+    height: 5vh;
+}
