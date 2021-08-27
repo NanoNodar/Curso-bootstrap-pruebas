@@ -1,6 +1,3 @@
-main{
-    width: 100%;
-}
 #contenedor{
     background-color: #fff;
 }
@@ -10,10 +7,12 @@ main{
 #inicio{
     background-color: #faf;
 }
-
+textarea{
+    resize: none !important;
+    height: 90px;
+}
 #section1{
     background-color: #f00;
-    height: 300px;
 }
 #titleForm{
     height: 30px;
