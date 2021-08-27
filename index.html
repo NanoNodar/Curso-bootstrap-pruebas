@@ -9,16 +9,41 @@
     <title>Prueba</title>
 </head>
 <body>
-    <main class="container" id="contenedor">
+    <main class="container-xl" id="contenedor">
         <header id="header" class="row">
             <div class="col-md-3 col-sm-4" id="inicio"></div>
             <nav class="col-md-6 offset-md-3 col-sm-8" id="botonera"></nav>
         </header>
         <section id="section1" class="row">
-            <div class="col-sm-6 col-xl-3 col-xs-12" id="s11"></div>
-            <div class="col-sm-6 col-xl-3 col-xs-12" id="s12"></div>
-            <div class="col-sm-6 col-xl-3 col-xs-12" id="s13"></div>
-            <div class="col-sm-6 col-xl-3 col-xs-12" id="s14"></div>
+            
+            <form class="row gx-3 gy-1">
+                <div class="col-12">
+                <h2 id="titleForm">Envia un comentario</h2>
+                </div>
+                <div class="col-md-6">
+                    <label for="inputEmail" class="form-label">Correo Electronico</label>
+                    <input type="email" class="form-control" id="inputEmail4">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputName" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="inputPassword4">
+                </div>
+                <div class="col-12">
+                    <label for="inputComment" class="form-label">Comentario</label>
+                    <textarea class="form-control"></textarea>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+
+
+
+            </form>
+
+
+
+
+
         </section>
         <section id="section2" class="row"><h3></h3></section>
         <section id="section3" class="row">
