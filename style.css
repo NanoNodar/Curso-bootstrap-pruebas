@@ -62,8 +62,7 @@ textarea{
     background-color: #00f;
 }
 #section4{
-    background-color: #0ff;
-    height: 30vh;
+    background-color: #000;
 }
 #footer{
     background-color: #000;
@@ -71,4 +70,10 @@ textarea{
 }
 h3{
     color: #fff;
+}
+.pad{
+    padding-bottom: 0.5rem;
+}
+.pad2{
+    padding-bottom: 1.5rem !important;
 }
