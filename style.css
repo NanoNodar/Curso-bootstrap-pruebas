@@ -12,37 +12,54 @@ textarea{
     height: 90px;
 }
 #section1{
-    background-color: #f00;
+    background-image: url("imagen-fondo.jpg");
+	padding: 200px 100px;
+	text-align: center;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+}
+#section1:before {
+	content:'';
+	position: absolute;
+    top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.7);
+}
+#section1 h1 {
+	font-size: 2.5em;
+	color: #fff;
+	position: relative;
+}
+#section1 h2 {
+	font-size: 1.5em;
+	color: #fff;
+	position: relative;
+    margin-top: 10px
+}
+#section1 img{
+    position: relative;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+
+}
+.col img{
+    width: 8rem;
 }
 #titleForm{
     height: 30px;
     font-size: 30px;
 }
-#s11{
-    background-color: #8080ff;
-}
-#s12{
-    background-color: #ccccff;
-}
-#s13{
-    background-color: #000066;
-}
-#s14{
-    background-color: #0000e6;
-}
 #section2{
-    background-color: #0f0;
-    height: 40vh;
+    background: #000127;
 }
 #section3{
     background-color: #00f;
-    height: 30vh;
-}
-#s31{
-    background-color: #804000;
-}
-#s32{
-    background-color: #ff8c1a;
 }
 #section4{
     background-color: #0ff;
@@ -50,5 +67,8 @@ textarea{
 }
 #footer{
     background-color: #000;
-    height: 5vh;
+    height: 70px;
+}
+h3{
+    color: #fff;
 }
