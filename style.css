@@ -1,16 +1,15 @@
 body{
     color: #fff;
-}    
-
+}
+.dropdown-menu{
+    min-width: 20rem !important;
+}
 #titleForm{
     font-size: 1.5rem !important;
 }
 textarea{
     resize: none !important;
     height: 6rem;
-}
-.dropdown-menu{
-    min-width: 20rem !important;
 }
 #section1{
     background-image: url("imagen-fondo.jpg");
@@ -43,11 +42,10 @@ textarea{
 }
 #section1 img{
     position: relative;
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    border-radius: 100px;
+    width: 200px;
+    height: 200px;
     text-align: center;
-
 }
 .col img{
     width: 8rem;
@@ -96,4 +94,7 @@ h3{
 }
 .carousel-inner{
     max-width: 50% !important;
+}
+.toast-body{
+    border-radius: 10px;
 }

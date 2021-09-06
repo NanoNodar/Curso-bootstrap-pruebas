@@ -1,242 +1,259 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- My style -->
     <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap style -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <title>Lucas Asin Nodar</title>
-</head>
-<body>
-    <main class="container-fluid bg-dark bg-gradient" id="contenedor">
-        <header id="header" class="row sticky-top">
+  </head>
+  <body>
+      <main class="container-fluid bg-dark bg-gradient" id="contenedor">
+          <header id="header" class="row sticky-top">
             <nav class="navbar navbar-expand-md navbar-dark bg-dark ">
-                <div class="container-fluid px-0">
-                    <a class="navbar-brand ps-0" href="https://nanonodar.github.io/Curso-bootstrap-pruebas/">Lucas Nahuel Asin Nodar</a>
-                    <!-- Navbar -->
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#section2">Habilidades</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#section3">Experiencias</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#section4">Proyectos</a>
-                            </li>
-                                <li class="nav-item dropdown">
-                                  <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Contacto
-                                  </a>
-                                  <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end" aria-labelledby="navbarDarkDropdownMenuLink">
-                                    <form class="px-4 py-3">
-                                      <h4 id="titleForm">Envia un comentario</h4>
-                                      <div class="mb-3">
-                                        <label for="inputEmail" class="form-label">Correo Electronico</label>
-                                        <input type="email" class="form-control" id="inputEmail4">
-                                      </div>
-                                      <div class="mb-3">
-                                        <label for="inputComment" class="form-label" style="resize: none;">Comentario</label>
-                                        <textarea class="form-control"></textarea>
-                                      </div>
-                                      <button type="submit" class="btn btn-secondary">Enviar</button>
-                                    </form>
-                                  </ul>
-                                </div>
-                              <!-- Toasts end -->
-                            </li>
-                        </ul>
-                    </div>
+              <a class="navbar-brand ps-0" href="https://nanonodar.github.io/Curso-bootstrap-pruebas/">Lucas Nahuel Asin Nodar</a>
+                <!-- Navbar -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#section2">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="#section3">Experiencias</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="#section4">Proyectos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Contacto
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end" aria-labelledby="navbarDarkDropdownMenuLink">
+                        <form class="px-4 py-3">
+                          <h4 id="titleForm">Envia un comentario</h4>
+                          <div class="mb-3">
+                            <label for="inputEmail" class="form-label">Correo Electronico</label>
+                            <input type="email" class="form-control" id="inputEmail4">
+                          </div>
+                          <div class="mb-3">
+                            <label for="inputComment" class="form-label" style="resize: none;">Comentario</label>
+                            <textarea class="form-control"></textarea>
+                          </div>
+                          <button type="button" class="btn btn-primary" id="liveToastBtn">Enviar</button>
+                        </form>
+                      </ul>   
+                    </li>
+                  </ul>
                 </div>
+                <!-- Toast start-->
+                <div class="position-fixed bottom-0 end-0 p-3">
+                  <div id="liveToast" class="toast bg-transparent w-100" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="toast-body bg-success">
+                      Mensaje enviado
+                    </div>
+                  </div>
+                </div>
+                <!-- Toasts end -->
             </nav>
-        </header>
-        <section id="section1" class="row justify-content-center">
-            <img class="circle" src="yo.jpg">
+          </header>
+          <section id="section1" class="row justify-content-center">
+            <img class="circle" src="lucas1.jpg">
             <h1>Lucas Nahuel Asin Nodar</h1>
             <h2>Desarrollador Frontend</h2>
-        </section>
-        <section id="section2" class="row py-4 pt-0 justify-content-center mx-5 mt-5">
+          </section>
+          <section id="section2" class="row py-4 pt-0 justify-content-center mx-5 mt-5">
             <h3 class="text-center my-5 mb-2 fs-2">Habilidades</h3>
             <div class="row row-cols-1 row-cols-md-5 gy-5 m-4 mt-0 align-items-center">
-                <div class="col">
-                  <div class="text-center justify-content-center">
-                    <img src="html.png" class="card-img-top skill-icon justify-content-center" alt="...">
-                  </div>
+              <div class="col">
+                <div class="text-center justify-content-center">
+                  <img src="html.png" class="card-img-top skill-icon justify-content-center" alt="...">
                 </div>
-                <div class="col">
-                  <div class="text-center">
-                    <img src="css.png" class="card-img-top skill-icon" alt="...">
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="text-center">
-                    <img src="javascript.png" class="card-img-top skill-icon" alt="...">
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="text-center">
-                    <img src="git.png" class="card-img-top skill-icon" alt="...">
-                  </div>
-                </div>
-                <div class="col">
-                    <div class="text-center">
-                      <img src="reactjs.png" class="card-img-top skill-icon" alt="...">
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="text-center">
-                      <img src="angular.png" class="card-img-top skill-icon" alt="...">
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="text-center">
-                      <img src="node.png" class="card-img-top skill-icon" alt="...">
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="text-center">
-                      <img src="mysql.png" class="card-img-top skill-icon" alt="...">
-                    </div>
-                  </div>
-                  <div class="col ">
-                    <div class="text-center align-items-center">
-                      <img src="Bootstrap.png" class="card-img-top skill-icon align-items-center" alt="...">
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="text-center">
-                      <img src="php.png" class="card-img-top skill-icon" alt="...">
-                    </div>
-                  </div>
               </div>
-        </section>
-        <section id="section3" class="row justify-content-center m-5">
+              <div class="col">
+                <div class="text-center">
+                  <img src="css.png" class="card-img-top skill-icon" alt="...">
+                </div>
+              </div>
+              <div class="col">
+                <div class="text-center">
+                  <img src="javascript.png" class="card-img-top skill-icon" alt="...">
+                </div>
+              </div>
+              <div class="col">
+                <div class="text-center">
+                  <img src="git.png" class="card-img-top skill-icon" alt="...">
+                </div>
+              </div>
+              <div class="col">
+                <div class="text-center">
+                  <img src="reactjs.png" class="card-img-top skill-icon" alt="...">
+                </div>
+              </div>
+              <div class="col">
+                <div class="text-center">
+                  <img src="angular.png" class="card-img-top skill-icon" alt="...">
+                </div>
+              </div>
+              <div class="col">
+                <div class="text-center">
+                  <img src="node.png" class="card-img-top skill-icon" alt="...">
+                </div>
+              </div>
+              <div class="col">
+                <div class="text-center">
+                  <img src="mysql.png" class="card-img-top skill-icon" alt="...">
+                </div>
+              </div>
+              <div class="col ">
+                <div class="text-center align-items-center">
+                  <img src="Bootstrap.png" class="card-img-top skill-icon align-items-center" alt="...">
+                </div>
+              </div>
+              <div class="col">
+                <div class="text-center">
+                  <img src="php.png" class="card-img-top skill-icon" alt="...">
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="section3" class="row justify-content-center m-5">
             <h3 class="my-5 mb-2 fs-2">Experiencias</h3>
-          <!-- Carousel start -->
-          <div id="carouselExampleDark" class="carousel carousel-light slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner m-auto">
-              <div class="carousel-item active" data-bs-interval="10000">
-                <img src="Bootstrap.png" class="d-block w-100 my-5 pb-4" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <button type="button" class="btn link-light text-decoration-underline" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
-                    Ejemplo 1
-                  </button>
-                </div>
-                <!-- Modal start -->
-                <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel1" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h4 class="modal-title" id="staticBackdropLabel1">Titulo 1</h4>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consectetur accusantium itaque totam ex vel deserunt inventore? Magnam enim aliquid adipisci eos illo, molestiae, odio ratione eaque, amet accusamus aspernatur.
+            <!-- Carousel start -->
+            <div id="carouselExampleDark" class="carousel carousel-light slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner m-auto">
+                <div class="carousel-item active" data-bs-interval="10000">
+                  <img src="Bootstrap.png" class="d-block w-100 my-5 pb-4" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <button type="button" class="btn link-light text-decoration-underline" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
+                      Ejemplo 1
+                    </button>
+                  </div>
+                  <!-- Modal start -->
+                  <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel1" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h4 class="modal-title" id="staticBackdropLabel1">Titulo 1</h4>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consectetur accusantium itaque totam ex vel deserunt inventore? Magnam enim aliquid adipisci eos illo, molestiae, odio ratione eaque, amet accusamus aspernatur.
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <!-- Modal end -->
-              <div class="carousel-item" id="img-example-2"data-bs-interval="2000">
-                <img src="Bootstrap.png" class="d-block w-100 my-5 pb-4" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <button type="button" class="btn link-light text-decoration-underline" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
-                    Ejemplo 2
-                  </button>
-                </div>
-                <!-- Modal start -->
-                <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel2" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h4 class="modal-title" id="staticBackdropLabel2">Titulo 2</h4>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consectetur accusantium itaque totam ex vel deserunt inventore? Magnam enim aliquid adipisci eos illo, molestiae, odio ratione eaque, amet accusamus aspernatur.
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
                 <!-- Modal end -->
-              <div class="carousel-item">
-                <img src="Bootstrap.png" class="d-block w-100 my-5 pb-4" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <button type="button" class="btn link-light text-decoration-underline" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">
-                    Ejemplo 3
-                  </button>
-                </div>
-                <!-- Modal start -->
-                <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel3" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h4 class="modal-title" id="staticBackdropLabel3">Titulo 3</h4>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="carousel-item" id="img-example-2"data-bs-interval="2000">
+                  <img src="Bootstrap.png" class="d-block w-100 my-5 pb-4" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <button type="button" class="btn link-light text-decoration-underline" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+                      Ejemplo 2
+                    </button>
+                  </div>
+                  <!-- Modal start -->
+                  <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel2" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h4 class="modal-title" id="staticBackdropLabel2">Titulo 2</h4>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consectetur accusantium itaque totam ex vel deserunt inventore? Magnam enim aliquid adipisci eos illo, molestiae, odio ratione eaque, amet accusamus aspernatur.
+                        </div>
                       </div>
-                      <div class="modal-body">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consectetur accusantium itaque totam ex vel deserunt inventore? Magnam enim aliquid adipisci eos illo, molestiae, odio ratione eaque, amet accusamus aspernatur.
+                    </div>
+                  </div>
+                </div>
+                  <!-- Modal end -->
+                <div class="carousel-item">
+                  <img src="Bootstrap.png" class="d-block w-100 my-5 pb-4" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <button type="button" class="btn link-light text-decoration-underline" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">
+                      Ejemplo 3
+                    </button>
+                  </div>
+                  <!-- Modal start -->
+                  <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel3" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h4 class="modal-title" id="staticBackdropLabel3">Titulo 3</h4>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consectetur accusantium itaque totam ex vel deserunt inventore? Magnam enim aliquid adipisci eos illo, molestiae, odio ratione eaque, amet accusamus aspernatur.
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
+                  <!-- Modal end -->
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
-                <!-- Modal end -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-          <!-- Carousel end -->
-        </section>
-        <!-- Card start -->
-        <section id="section4" class="row py-4 pt-0 justify-content-center mb-5 mx-5">
-          <h3 class="text-center my-5 mb-0 fs-2">Proyectos</h3>
-          <div class="row row-cols-1 px-2 row-cols-md-2 m-1 g-5">
-            <div class="col pad">
-              <div class="card">
-                <img src="Captura.JPG" class="card-img-top w-100 img-fluid" alt="...">
-                <div class="card-body">
-                  <h4 class="card-title">Kennel Admin</h4>
-                  <p>Registro en php usando base de datos sql y diseño en Bootstrap</p>
-                  <p>*Pagina privada</p>
+            <!-- Carousel end -->
+          </section>
+          <!-- Card start -->
+          <section id="section4" class="row py-4 pt-0 justify-content-center mb-5 mx-5">
+            <h3 class="text-center my-5 mb-0 fs-2">Proyectos</h3>
+            <div class="row row-cols-1 px-2 row-cols-md-2 m-1 g-5">
+              <div class="col pad">
+                <div class="card">
+                  <img src="Captura.JPG" class="card-img-top w-100 img-fluid" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title">Kennel Admin</h4>
+                    <p>Registro en php usando base de datos sql y diseño en Bootstrap</p>
+                    <p>*Pagina privada</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="pagina-kennel.jpg" class="card-img-top w-100 img-fluid" alt="...">
+                  <div class="card-body pad2">
+                    <h4 class="card-title">Kennel Club Argentino</h4>
+                    <p>Diseño de la pagina usando HTML, CSS, JavaScript y Bootstrap</p>
+                    <a href="http://www.kennelclubargentino.org.ar/" target="_blank" class="btn btn-dark">Ir a la pagina</a>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col">
-              <div class="card">
-                <img src="pagina-kennel.jpg" class="card-img-top w-100 img-fluid" alt="...">
-                <div class="card-body pad2">
-                  <h4 class="card-title">Kennel Club Argentino</h4>
-                  <p>Diseño de la pagina usando HTML, CSS, JavaScript y Bootstrap</p>
-                  <a href="http://www.kennelclubargentino.org.ar/" target="_blank" class="btn btn-dark">Ir a la pagina</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- Card end -->
-        <footer id="footer" class="row">
-            <p class="text-center mt-4">Desarrollado y diseñado por Lucas Nahuel Asin Nodar</p>   
-        </footer>
-    </main>
+          </section>
+          <!-- Card end -->
+          <footer id="footer" class="row">
+              <p class="text-center mt-4">Desarrollado y diseñado por Lucas Nahuel Asin Nodar</p>   
+          </footer>
+      </main>
+    <script>
+      var toastTrigger = document.getElementById('liveToastBtn')
+      var toastLiveExample = document.getElementById('liveToast')
+      if (toastTrigger) {
+        toastTrigger.addEventListener('click', function () {
+        var toast = new bootstrap.Toast(toastLiveExample)
+        toast.show()
+        })
+      }
+    </script>
     <script src="js/bootstrap.min.js"></script>
-</body>
+  </body>
 </html>
